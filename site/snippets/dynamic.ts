@@ -1,6 +1,7 @@
 import { WalletClientSigner, type SmartAccountSigner } from "@alchemy/aa-core";
 import { useDynamicContext } from "@dynamic-labs/sdk-react-core";
 
+//eslint-ignore-next-line
 const { primaryWallet } = useDynamicContext();
 
 const dynamicProvider = await primaryWallet?.connector?.getWalletClient();
